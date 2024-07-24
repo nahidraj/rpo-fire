@@ -1,0 +1,143 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+span {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: $transition;
+}
+
+button {
+  transition: $transition;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  background-color: #020202;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.section_title {
+  color: $white;
+  font-family: "Oswald", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.common_btn {
+  color: $primary;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+  display: flex;
+  width: 303px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2000px;
+  background: #000;
+  &:hover{
+    background-color: $white;
+    color: $black;
+  }
+}
+
+::selection {
+  background-color: $primary;
+  color: $black;
+}
+
+
+// line limit start
+.line-limit-1 {
+  @include line_limit (1 !important);
+}
+
+.line-limit-2 {
+  @include line_limit (2 !important);
+}
+
+.line-limit-3 {
+  @include line_limit (3 !important);
+}
+
+.line-limit-4 {
+  @include line_limit (4 !important);
+}
+
+.line-limit-6 {
+  @include line_limit (6 !important);
+}
+
+.line-limit-7 {
+  @include line_limit (7 !important);
+}
+
+.line-limit-8 {
+  @include line_limit (8 !important);
+}
+
+.line-limit-9 {
+  @include line_limit (9 !important);
+}
+
+.line-limit-10 {
+  @include line_limit (10 !important);
+}
