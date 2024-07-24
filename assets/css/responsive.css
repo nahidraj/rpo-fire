@@ -14,6 +14,10 @@
   .page_area_six .game_option_item .item {
     min-height: 408px;
   }
+
+  .page_area_seven .lvl_slider_area .lvl_slider .lvl_slider_item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width:1199.98px) {
@@ -257,7 +261,11 @@
 
   .page_area_six .game_option_item .item .text p {
     width: 100%;
-  } 
+  }
+
+  .page_area_seven .lvl_slider_area {
+    margin-bottom: 121px !important;
+  }
 }
 
 @media (max-width:575.98px) {

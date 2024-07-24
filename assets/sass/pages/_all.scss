@@ -683,6 +683,15 @@
         span {
           color: $primary;
         }
+
+        .progress {
+          margin-top: 10px !important;
+          width: 284px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: $primary;
+          margin: 0 auto;
+        }
       }
 
       tr {
@@ -985,6 +994,146 @@
     line-height: 130%;
   }
 }
+
+.page_area_seven {
+  .lvl_top_info {
+    margin-bottom: 20px;
+  }
+
+  .lvl_slider_area {
+    margin-top: 40px;
+    margin-bottom: 196px !important;
+
+
+    .lvl_top_info {
+      .common_btn {
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        padding: 10px 20px !important;
+        border: 1px solid $white;
+        border-radius: 100px;
+        width: 186px;
+
+        &:hover {
+          background-color: $primary;
+          border-color: $primary;
+          color: $black;
+        }
+      }
+
+      .info {
+        p {
+          color: $white;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%;
+        }
+      }
+    }
+
+    .lvl_slider_title {
+      color: $white;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      margin-bottom: 10px;
+    }
+
+    .lvl_slider {
+      margin-right: 0;
+      max-width: 1384px;
+      margin: 0 auto;
+
+      .item {
+        margin: 0 5px;
+
+        .top {
+          width: 100%;
+          height: 28px;
+          border-radius: 20px;
+          background: #FFF706;
+          margin-bottom: 10px;
+        }
+
+        .info_box {
+          width: 100%;
+          height: 222px;
+          border-radius: 20px;
+          background: #262626;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 22px;
+          align-items: center;
+
+          .title {
+            color: $white;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 130%;
+          }
+
+          .image {
+            margin: 5px 0;
+          }
+
+          p {
+            color: $white;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+          }
+        }
+      }
+
+      .slider_item_2 {
+        p {
+          color: $primary !important;
+        }
+      }
+
+      .arrow {
+        color: $white;
+        position: absolute;
+        bottom: -63px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        width: 54px;
+      }
+
+      .arrow-left {
+        margin-left: -30px;
+      }
+
+      .arrow-right {
+        margin-left: 30px;
+      }
+    }
+
+    .lvl_slider_2 {
+      margin-top: 10px;
+    }
+  }
+
+  .table_list_info {
+    .list_button_links {
+      margin-top: 40px;
+
+      a {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+}
+
 
 .footer_area {
   background-color: #262626;
