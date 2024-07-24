@@ -170,6 +170,10 @@
   .page_area_six .game_option_item .item {
     min-height: 386px;
   }
+
+  .banner_area_one .text {
+    justify-content: center;
+  }
 }
 
 @media (max-width:767.98px) {
@@ -270,7 +274,7 @@
 
 @media (max-width:575.98px) {
   .banner_area_one .text .title {
-    font-size: 110px;
+    font-size: 100px;
   }
 
   .banner_area_one .text .link_info {
@@ -313,7 +317,7 @@
   }
 
   .banner_area_two .title {
-    font-size: 110px !important;
+    font-size: 100px !important;
   }
 
   .game_list_item .top_info .date {
