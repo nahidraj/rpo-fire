@@ -138,6 +138,20 @@ $(function () {
     ]
   });
 
+  // Game list slider js
+  $(".game_list_slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 600,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    prevArrow: '<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon arrow arrow-left icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>',
+    nextArrow: '<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon arrow arrow-right icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>',
+  });
+
   //partner slider js
   $(".partner_slider").slick({
     dots: false,
@@ -159,6 +173,19 @@ $(function () {
   $('.partner_arrow_next').on('click', function () {
     $('.partner_slider').slick('slickNext');
   });
+
+  $(".show-toast").click(function () {
+    Toastify({
+      text: "Reward Claimed Successfully!",
+      duration: 3000,
+      close: true,
+      gravity: "top",
+      position: "right",
+      backgroundColor: "#28a745",
+      stopOnFocus: true,
+    }).showToast();
+  });
+
 
 
   // scroll to top js

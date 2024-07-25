@@ -1,6 +1,6 @@
 @media (max-width:1399.98px) {
   .header_area .nav-item {
-    margin: 0 10px;
+    margin: 0 7px;
   }
 
   .banner_area_one .text .title {
@@ -17,6 +17,10 @@
 
   .page_area_seven .lvl_slider_area .lvl_slider .lvl_slider_item {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .header_area .menus_actions a {
+    margin-left: 16px;
   }
 }
 
@@ -76,6 +80,18 @@
 
   .page_area_six .game_option_item_big .item_main .image {
     max-width: 579px;
+  }
+
+  .mobile-menu-main .menus_actions .link_btn_2 {
+    padding: 9px 13px;
+  }
+
+  .mobile-menu-main .menus_actions {
+    padding-left: 19px;
+  }
+
+  .header_area .menus_actions a {
+    margin-left: 12px;
   }
 }
 

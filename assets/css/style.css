@@ -190,6 +190,71 @@ p {
 .header_area .nav-item .nav-link:hover {
   color: #FFF706;
 }
+.header_area .nav-item .sub_menu {
+  width: 226px;
+  background-color: #000000;
+  position: absolute;
+  top: 100%;
+  margin-top: 24px;
+  left: 0;
+  z-index: 99;
+  padding: 24px;
+  padding-top: 24px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.2s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.header_area .nav-item .sub_menu::before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  content: "";
+}
+.header_area .nav-item .sub_menu li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 150%;
+  width: 100%;
+}
+.header_area .nav-item .sub_menu li a:hover {
+  color: #FFF706;
+}
+.header_area .nav-item .sub_menu li + li {
+  margin-top: 20px;
+}
+.header_area .nav-item:hover > .sub_menu {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 14px;
+}
+.header_area .menus_actions {
+  display: flex;
+  align-items: center;
+}
+.header_area .menus_actions .select_lang {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.header_area .menus_actions .select_lang .flag {
+  flex: 0 0 auto;
+}
+.header_area .menus_actions .select_lang .flag img {
+  width: 22px;
+}
+.header_area .menus_actions .select_lang select {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
 .header_area .menus_actions a {
   font-size: 14px;
   font-weight: 400;
@@ -494,7 +559,7 @@ p {
   margin-top: 140px;
 }
 .game_list_area .link_all_btn {
-  margin-top: 40px;
+  margin-top: 120px;
   color: #FFFFFF;
   font-size: 14px;
   font-style: normal;
@@ -543,12 +608,30 @@ p {
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 34px;
+  position: relative;
 }
 .game_list_item .image img {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
   transition: all linear 0.2s;
+}
+.game_list_item .image .claim_btn {
+  color: #000000;
+  background-color: #FFF706;
+  padding: 12px 22px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.game_list_item:hover .image .claim_btn {
+  display: block;
 }
 .game_list_item:hover .image img {
   transform: scale(1.1);
@@ -742,6 +825,68 @@ p {
 }
 .common_list_table table tbody tr:nth-child(even) {
   background-color: #262626;
+}
+
+.game_list_slider .slider_item {
+  margin: 0 4px;
+}
+.game_list_slider .arrow {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  width: 54px;
+  margin-bottom: -80px;
+  width: 45px;
+  height: 40px;
+  background-color: #262626;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all linear 0.2s;
+}
+.game_list_slider .arrow:hover {
+  background-color: #FFF706;
+  color: #000000;
+}
+.game_list_slider .arrow-left {
+  margin-left: -30px;
+}
+.game_list_slider .arrow-right {
+  margin-left: 30px;
+}
+
+.pagination {
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
+}
+.pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.pagination ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  width: 28px;
+  height: 24px;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination ul .next {
+  margin-left: 10px;
+}
+.pagination ul .active a {
+  color: #000000;
+  background-color: #FFF706;
 }
 
 .page_four_info .image {
@@ -1176,6 +1321,18 @@ p {
 .sticky-menu {
   padding: 10px 0 !important;
   box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.08);
+}
+
+.toastify {
+  background-color: #000000 !important;
+  border-radius: 10px !important;
+  padding: 20px 24px !important;
+  border-left: 4px solid green;
+  border-bottom: 1px solid green;
+}
+
+.toast-close {
+  margin-left: 20px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
