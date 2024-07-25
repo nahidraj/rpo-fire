@@ -176,7 +176,7 @@ $(function () {
 
   $(".show-toast").click(function () {
     Toastify({
-      text: "Reward Claimed Successfully!",
+      text: "✔️ Reward Claimed Successfully!",
       duration: 3000,
       close: true,
       gravity: "top",
