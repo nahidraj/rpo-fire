@@ -354,4 +354,8 @@
     width: 43%;
     margin: 0 5px;
   }
+
+  .game_list_item .image .claim_btn {
+    font-size: 14px;
+  }
 }

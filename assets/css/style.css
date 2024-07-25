@@ -1329,6 +1329,7 @@ p {
   padding: 20px 24px !important;
   border-left: 4px solid green;
   border-bottom: 1px solid green;
+  max-width: 368px !important;
 }
 
 .toast-close {
